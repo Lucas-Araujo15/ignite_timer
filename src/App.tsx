@@ -1,19 +1,21 @@
-import { ThemeProvider } from 'styled-components'
-import { BrowserRouter } from 'react-router-dom'
-import { GlobalStyle } from './styles/global'
-import { defaultTheme } from './styles/themes/default'
-import { Router } from './Router'
+// import { ThemeProvider } from 'styled-components'
+// import { BrowserRouter } from 'react-router-dom'
+// import { GlobalStyle } from './styles/global'
+// import { defaultTheme } from './styles/themes/default'
+// import { Router } from './Router'
+import { Home } from './Home'
 
 export function App() {
-  return (
-    // Context Providers
-    <ThemeProvider theme={defaultTheme}>
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
-      <GlobalStyle />
-    </ThemeProvider>
-  )
+  return <Home />
+  // return (
+  //   // Context Providers
+  //   <ThemeProvider theme={defaultTheme}>
+  //     <BrowserRouter>
+  //       <Router />
+  //     </BrowserRouter>
+  //     <GlobalStyle />
+  //   </ThemeProvider>
+  // )
 }
 
 export default App
